@@ -7,5 +7,5 @@
 scaffold()
 }
 \description{
-Scaffold
+Scaffold a shiny-tailwind application.
 }

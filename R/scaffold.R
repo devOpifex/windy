@@ -7,7 +7,7 @@ scaffold <- \() {
   # scaffold
   cli::cli_h2("Scaffolding")
   packer::npm_install("tailwindcss", scope = "dev")
-  packer::npx("tailwindcss init")
+  packer::npx("tailwindcss init --full")
   cli::cli_alert_info("Initialised tailwind")
   edit_package_json()
   cli::cli_alert_info("Updated {.code package.json}")

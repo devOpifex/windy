@@ -11,5 +11,5 @@ windy_build()
 windy_watch()
 }
 \description{
-NPM
+NPM commands to build tailwind.
 }
