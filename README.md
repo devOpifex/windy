@@ -48,3 +48,4 @@ run()
 or run `windy_watch()` to rebuild at every change.
 - Add a module with `add_module()`.
 - Note this uses [htmlTemplate](https://shiny.rstudio.com/articles/templates.html)
+- Everything in the `inst/app/assets` is served.
