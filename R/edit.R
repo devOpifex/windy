@@ -9,7 +9,7 @@ edit_package_json <- \() {
 
   json$scripts <- list(
     watch.tailwind = "npx tailwindcss -i ./inst/app/input.css -o ./inst/app/assets/styles.css --watch",
-    build.tailwind = "npx tailwindcss -i ./inst/app/input.css -o ./inst/app/assets/styles.css"
+    build.tailwind = "npx tailwindcss -i ./inst/app/input.css -o ./inst/app/assets/styles.css --minify"
   )
 
   jsonlite::write_json(
