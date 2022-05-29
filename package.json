@@ -1,0 +1,32 @@
+{
+  "name": "windy",
+  "version": "1.0.0",
+  "description": "<!-- badges: start --> <!-- badges: end -->",
+  "main": "index.js",
+  "directories": {
+    "man": "man"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "none": "webpack --config webpack.dev.js --mode=none",
+    "development": "webpack --config webpack.dev.js",
+    "production": "webpack --config webpack.prod.js",
+    "watch": "webpack --config webpack.dev.js -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devOpifex/windy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devOpifex/windy/issues"
+  },
+  "homepage": "https://github.com/devOpifex/windy#readme",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-merge": "^5.8.0"
+  }
+}

@@ -9,7 +9,6 @@
 #' @examples 
 #' \dontrun{add_module("module_name")}
 #' 
-#' @importFrom fs file_exists
 #' @importFrom cli cli_alert_success
 #' 
 #' @return Called for side-effects, invisibly returns
@@ -27,7 +26,7 @@ add_module <- function(name){
 
 	path <- sprintf("R/module_%s.R", name)
 
-	if(file_exists(path))
+	if(file.exists(path))
 		stop(
 			sprintf("File `%s` already exists.", path),
 			call. = FALSE

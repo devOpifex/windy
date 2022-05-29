@@ -18,4 +18,5 @@ Imports:
     cli,
     packer,
     usethis,
-    jsonlite
+    jsonlite,
+    htmltools
