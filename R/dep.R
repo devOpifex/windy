@@ -9,10 +9,10 @@
 #' @keywords internal
 get_js_dependency <- \(name) {
   htmlDependency(
-    name = sprintf("octoprime-%s", name),
-    version = utils::packageVersion("octoprime"),
-    src = "assets/js",
-    package = "octoprime",
+    name = sprintf("windy-%s", name),
+    version = utils::packageVersion("windy"),
+    src = "assets",
+    package = "windy",
     script = sprintf("%s.js", name),
     all_files = FALSE
   )
