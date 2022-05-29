@@ -4,7 +4,7 @@
 \alias{button}
 \title{Button}
 \usage{
-button(id, ..., class = ...class(), .tag = htmltools::tags$button)
+button(id, ..., class = ...class(), .tag = htmltools::tags$button, value = 0L)
 }
 \arguments{
 \item{id}{ID of button and \code{input}.}
@@ -13,7 +13,7 @@ button(id, ..., class = ...class(), .tag = htmltools::tags$button)
 
 \item{class}{Any additional classes.}
 
-\item{.tag}{Tag to use, e.g.: \code{tags$a}.}
+\item{value}{Initial value of button, must be an integer.}
 }
 \description{
 A bare button.
