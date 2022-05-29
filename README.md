@@ -7,7 +7,7 @@
 
 :warning: Work in progress
 
-An attempt to
+Tailwindcss for shiny.
 
 </div>
 
