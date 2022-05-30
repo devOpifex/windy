@@ -2,11 +2,8 @@
 
 export(...class)
 export(add_module)
-export(button)
 export(scaffold)
 export(windy_build)
 export(windy_watch)
 importFrom(cli,cli_alert_success)
 importFrom(htmltools,htmlDependency)
-importFrom(htmltools,tagList)
-importFrom(htmltools,tags)
