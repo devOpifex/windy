@@ -6,3 +6,6 @@ document: bundle
 
 bundle: 
 	Rscript -e "packer::bundle()"
+
+install:
+	Rscript -e "devtools::install()"
