@@ -15,6 +15,8 @@ pkg_file <- \(...){
 #' 
 #' @param choices Choices, named vector or list.
 #' 
+#' @importFrom htmltools tags
+#' 
 #' @keywords internal
 select_choices <- \(
   choices
@@ -31,7 +33,9 @@ select_choices <- \(
 
   1:length(values) |> 
     lapply(\(i) {
-      sprintf("<option value='%s'>%s</option>", values[i], labels[i])
-    }) |> 
-    paste0(collapse = "")
+      tags$option(
+        value = values[i],
+        labels[i]
+      )
+    })
 }
