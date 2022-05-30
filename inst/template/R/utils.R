@@ -23,10 +23,15 @@ select_choices <- \(
     stop("Missing `choices`", call. = FALSE)
 
   labels <- names(choices)
+  if(is.null(labels))
+    labels <- rep("", length(choices))
+
   values <- unname(choices)
   labels[labels == ""] <- values[labels == ""]
 
-  names(values) <- labels
-
-  as.list(values)
+  1:length(values) |> 
+    lapply(\(i) {
+      sprintf("<option value='%s'>%s</option>", values[i], labels[i])
+    }) |> 
+    paste0(collapse = "")
 }
