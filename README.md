@@ -11,7 +11,7 @@
 
 </div>
 
-Currently it sets up a basic scaffold to setup up tailwind
+Currently it sets up a basic scaffold to use tailwind
 within an R package for a shiny application.
 All of the heavy lifting is done by tailwind itself.
 
