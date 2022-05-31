@@ -18,8 +18,8 @@ All of the heavy lifting is done by tailwind itself.
 ---
 
 :rotating_light: You must use `htmltools::htmlTemplate` because
-tailwind scans `.html` and `.css` file to produce an optimised
-CSS output file. Anything dynamically generated (`{{ something }}`)
+tailwind scans `.html` and `.css` files to produce an optimised
+CSS output file. Anything dynamically generated (e.g.: `{{ something }}`)
 will not be scanned by tailwind and the classes required by
 `something` will be missing from the output.
 
