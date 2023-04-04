@@ -15,6 +15,6 @@ copy_template <- \(){
 
   # edit utils
   utils <- readLines("R/utils.R")
-  utils <- gsub("#PKG#", get_pkg_name(), utils)
+  utils <- gsub("#PKGNAME#", get_pkg_name(), utils)
   writeLines(utils, "R/utils.R")
 }

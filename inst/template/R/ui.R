@@ -9,7 +9,13 @@
 #' 
 #' @keywords internal
 ui <- \(req) {
-  htmlTemplate(
-    pkg_file("app/index.html")
+  page(
+    div(
+      class = "bg-amber-500 text-white h-56 text-center m-2 rounded p-6",
+      h1(
+        "Hello, Tailwind!",
+        class = "text-3xl"
+      )
+    )
   )
 }

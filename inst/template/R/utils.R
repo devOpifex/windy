@@ -6,7 +6,7 @@
 #' 
 #' @keywords internal
 pkg_file <- \(...){
-  system.file(..., package = "windy.app")
+  system.file(..., package = "#PKGNAME#")
 }
 
 #' Create Select Choices
@@ -39,3 +39,28 @@ select_choices <- \(
       )
     })
 }
+
+#' CSS Dependency
+#' @keywords internal
+dep <- function() {
+  htmltools::htmlDependency(
+    "tailwind",
+    utils::packageVersion("#PKGNAME#"),
+    package = "#PKGNAME#",
+    src = "app/assets",
+    stylesheet = c(src = "styles.css")
+  )
+}
+
+#' Application Page
+#' @param ... Application content
+#' @keywords internal
+page <- function(...) {
+  tags$html(
+    dep(),
+    tags$body(
+      ...
+    )
+  )
+}
+

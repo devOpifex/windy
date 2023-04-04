@@ -4,6 +4,9 @@ check: document
 document: bundle
 	Rscript -e "devtools::document()"
 
+install: check
+	Rscript -e "devtools::install()"
+
 bundle: 
 	Rscript -e "packer::bundle()"
 

@@ -1,5 +1,17 @@
 module.exports = {
-  content: ["./inst/app/**/*.{html,js}"],
+  content: {
+    files: ["./inst/app/**/*.{html,js}", "./R/*.R"],
+    extract: {
+      R: (content) => {
+        let cls = content.match(/(?<=(["']\b))(?:(?=(\\?))\2.)*?(?=\1)/g);
+
+        if(cls == null)
+          return [];
+
+        return cls[0].split(/\s/);
+      }
+    }
+  },
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {

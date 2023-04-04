@@ -36,10 +36,6 @@ add_module <- function(name){
   mod <- readLines(pkg_file("module/module.R"))
   mod <- gsub("#MODULE#", name, mod)
   writeLines(mod, sprintf("R/%s.R", name))
-  file.copy(
-    pkg_file("module/module.html"),
-    sprintf("inst/app/%s.html", name)
-  )
 
 	invisible()
 }
