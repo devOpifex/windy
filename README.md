@@ -7,6 +7,8 @@
 
 [Tailwindcss](https://tailwindcss.com/) for shiny.
 
+<img src="inst/logo.png" />
+
 </div>
 
 Currently it sets up a basic scaffold to use tailwind
