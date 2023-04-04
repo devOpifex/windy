@@ -3,7 +3,7 @@ module.exports = {
     files: ["./inst/app/**/*.{html,js}", "./R/*.R"],
     extract: {
       R: (content) => {
-        let cls = content.match(/(?<=(["']\b))(?:(?=(\\?))\2.)*?(?=\1)/g);
+        let cls = content.match(/(?<=((?<=[\s,.:;"']|^)["']))(?:(?=(\\?))\2.)*?(?=\1)/);
 
         if(cls == null)
           return [];
