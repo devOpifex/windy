@@ -8,9 +8,9 @@
 #MODULE#UI <- \(id){
 	ns <- NS(id)
 
-	htmlTemplate(
-		pkg_file("app/#MODULE#.html")
-	)
+  tagList(
+    h1("#MODULE#")
+  )
 }
 
 #' #MODULE# Server
