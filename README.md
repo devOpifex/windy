@@ -17,6 +17,17 @@ All of the heavy lifting is done by tailwind itself.
 
 :heavy_check_mark: now works with R-built UI.
 
+## Note
+
+Tailwind is "a utility-first CSS framework packed with classes [...]",
+all styling is done via classes.
+
+This means there are no out-of-the-box compoenents that we can integrate here,
+e.g.: no "navbar".
+These will have to be built by yourself (they are much easier to build than you
+may think).
+The package may eventually provide helpers to design those.
+
 ## Installation
 
 You can install the development version of windy from
