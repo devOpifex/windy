@@ -63,3 +63,7 @@ run()
 
 Change your CSS then run `windy_build()` to rebuild the output CSS,
 or run `windy_watch()` to rebuild at every change.
+
+# Example
+
+You will find a very basic example at [devOpifex/windy.example](https://github.com/devOpifex/windy.example).
