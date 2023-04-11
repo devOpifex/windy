@@ -2,8 +2,6 @@
 #' 
 #' @param id Unique id for module instance.
 #' 
-#' @importFrom htmltools htmlTemplate
-#' 
 #' @keywords internal
 #MODULE#UI <- \(id){
 	ns <- NS(id)
