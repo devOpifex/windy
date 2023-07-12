@@ -55,8 +55,7 @@ windy::scaffold()
 3. Run
 
 ```r
-devtools::load_all()
-run()
+windy::windy_build()
 ```
 
 ----
